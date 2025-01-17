@@ -40,6 +40,16 @@
             <h2>Site Name</h2>
             <h3>Timbuktu Chamber of Commerce</h3>
 
+
+            <!--This is to include the JS list view, changes made by Ivan-->
+            <section id="directory-controls">
+                <button id="grid" class="toggle-button active">Grid View</button>
+                <button id="list" class="toggle-button">List View</button>
+            </section>
+            <section id="directory"></section>
+            <!--End of Ivan contribution-->
+
+<!--Note: i noticed the HTML has some components that could better fit into the Home page, this is only the directory page so we just need to display the data I put on the JSON file-->
             <h2>Site Purpose</h2>
             <p>
                 This website will serve as a resource hub for businesses in the city of Timbuktu. 
@@ -102,8 +112,8 @@
     </main>
 
     <footer>
-        <p>WDD231 Class Project
-            Nichole L. Ramos &copy; 20XX - Timbuktu Chamber of Commerce</p>
+        <p>© <span id="year"></span> Timbuktu Chamber of Commerce</p>
+<p>Last Modified: <span id="last-modified"></span></p>
         <nav>
             <a href="">Site Plan</a>
             <a href="contactus.html">Contact us</a>
