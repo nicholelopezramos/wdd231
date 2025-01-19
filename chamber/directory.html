@@ -1,135 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta property="og:title" content="Chamber Directory Page">
-    <meta property="og:type" content="type">
-    <meta property="og:image" content="URL_to_your_image">
-    <meta property="og:url" content="URL_of_your_page">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory Page</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <link rel="icon" href="favicon.ico">
-    
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Chamber of Commerce Directory">
+        <meta name="author" content="Ivan Ponce">
+        <meta property="og:title" content="Chamber of Commerce Directory">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="images/favicon.png">
+        <meta property="og:url" content="https://">
+        <title>Directory - Chamber of Commerce</title>
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="styles/directory.css">
+        <script defer src="scripts/directory.js"></script>
+    </head>
 <body>
     <header>
-        <a id="logo_link" href="index.html">
-            <img src="logo.png" alt="Chamber Logo" />
-        </a>
+        <div class="header-left">
+            <img src="logo.png" alt="Website Logo" class="logo">
+            <h1>Timbuktu Chamber of Commerce</h1>
+          </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">Directory</a>
-            <a href="news.html">Join</a>
-            <a href="events.html">Discover</a>
-            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <img id="hero-img" src="" alt="Image">
-            <div class="hero-text">
-                <h1>Welcome to the Timbuktu Chamber of Commerce</h1>
-                
-                <a class="btn" href="about.html">Learn More</a>
-            </div>
-        </section>
-
-        <section id="about">
-            <h2>Site Name</h2>
-            <h3>Timbuktu Chamber of Commerce</h3>
-
-
-            <!--This is to include the JS list view, changes made by Ivan-->
-            <section id="directory-controls">
-                <button id="grid" class="toggle-button active">Grid View</button>
-                <button id="list" class="toggle-button">List View</button>
-            </section>
-            <section id="directory"></section>
-            <!--End of Ivan contribution-->
-
-<!--Note: i noticed the HTML has some components that could better fit into the Home page, this is only the directory page so we just need to display the data I put on the JSON file-->
-            <h2>Site Purpose</h2>
-            <p>
-                This website will serve as a resource hub for businesses in the city of Timbuktu. 
-                The site will provide information on local events, host networking opportunities, 
-                create business directories, and encourage local shopping. 
-                It aims to promote local economic growth, support local businesses, 
-                and foster a sense of community between the businesses.
-            </p>
-
-            <h2>Target Market</h2>
-            <p>
-                Business owners and patrons in the city of Timbuktu and surrounding areas.
-            </p>
-
-            <h2>Site Goals</h2>
-            <ul>
-                <li>Improve member engagement by providing valuable resources and networking opportunities.</li>
-                <li>Attract new businesses and encourage economic development in the community.</li>
-                <li>Improve the visibility and reputation of the chamber as a trusted authority in local business matters.</li>
-            </ul>
-
-            <h2>Personas</h2>
-            <ul>
-                <li><strong>Small Business Owner:</strong> Maria is a 35-year-old entrepreneur who owns a small boutique shop in town. She is looking for networking opportunities, business resources, and marketing support to help grow her business.</li>
-                <li><strong>Corporate Executive:</strong> Diego is a 47-year-old executive at a large company looking for growth opportunities. His company is interested in partnership opportunities, economic development resources, and networking with other business leaders in the area.</li>
-                <li><strong>The New Resident:</strong> Francisco recently moved into the community and is looking to learn more about services available in the area. He is interested in finding business directories, event calendars, and community service opportunities.</li>
-            </ul>
-        </section>
-
-        <section id="scenarios">
-            <h2>Scenarios</h2>
-            <ul>
-                <li>
-                    <strong>Local Business Owner:</strong> A local business owner is interested in joining the chamber of commerce to network with other business owners. They visit the website to find information on membership benefits, fees, and how to apply.
-                </li>
-                <li>
-                    <strong>Community Member:</strong> A community member is looking for upcoming events and workshops hosted by the chamber. They visit the website to browse the events calendar and register for interesting activities.
-                </li>
-                <li>
-                    <strong>Visitor:</strong> A visitor from out of town is considering relocating to the area and wants to learn more about the local business environment. They explore the chamber's website for information on existing businesses, availability of skilled labor, and quality of life in the area.
-                </li>
-            </ul>
-        </section>
-
-        <section id="seo-plan">
-            <h2>SEO Plan</h2>
-            <ul>
-                <li>Use relevant keywords in site descriptions, content, and blog posts.</li>
-                <li>Verify the site on Google's Business Profile.</li>
-                <li>Get inbound links or backlinks from all member businesses to improve rankings.</li>
-                <li>Embed Google Analytics in all site pages.</li>
-            </ul>
-        </section>
-
-        <section id="join">
-            <h2>Join Us</h2>
-            <p>Become part of a vibrant business community today.</p>
-            <a class="btn" href="join.html">Join Now</a>
-        </section>
+        <div class="menu">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
+        </div>
+        <hr>
+        <article class="grid"></article>
     </main>
 
     <footer>
-        <p>© <span id="year"></span> Timbuktu Chamber of Commerce</p>
-<p>Last Modified: <span id="last-modified"></span></p>
-        <nav>
-            <a href="">Site Plan</a>
-            <a href="contactus.html">Contact us</a>
-            <a href="">FAQ</a>
-        </nav>
-        <div class="social">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook icon">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Twitter icon">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram icon">
-            </a>
-        </div>
+        <section>
+        <p>Timbuktu Chamber of Commerce</p>
+        <p>10 Rue De La Paix</p>
+        <p>Timbuktu, Mali 999</p>
+        <p>info@timbuktucc.org</p>
+        <p>(223) 555-2300</p>
+        </section>
+        <section>
+        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+    </section>
+    <section>
+        <p>&copy; <span id="current-year"></span> Your Chamber of Commerce</p>
+        <p>WDD 231 | Last Modified: <span id="last-modified"></span></p>
+    </section>
     </footer>
 </body>
 </html>

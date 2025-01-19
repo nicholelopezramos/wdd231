@@ -1,51 +1,55 @@
-// THIS IS JUST A FIRST DRAFT I NEED TO POLISH IT MORE, FEEDBACK IS RECEIVED
-// TBH NOT SURE IF THIS IS THE CORRECT APPROACH HAHA
-async function loadMembers(view = "grid") {
-    const response = await fetch('./data/members.json');
-    const members = await response.json();
-    displayMembers(members, view);
-}
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const display = document.querySelector("article");
+const currentYear = document.getElementById('current-year');
+const lastModified = document.getElementById('last-modified');
 
-function displayMembers(members, view) {
-    const container = document.getElementById('directory');
-    container.innerHTML = ""; 
+currentYear.textContent = new Date().getFullYear();
+lastModified.textContent = document.lastModified;
 
-    members.forEach(member => {
-        const memberCard = document.createElement('div');
-        memberCard.className = view === "grid" ? "member-card grid-view" : "member-card list-view";
+fetch("data/members.json")
+    .then(response => response.json())
+    .then(data => {
+        renderGrid(data); // Default view
+        setupEventListeners(data);
+    })
+    .catch(error => console.error("Error loading data:", error));
 
-        memberCard.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}" class="member-image">
-            <div class="member-details">
+// Render grid layout
+function renderGrid(data) {
+    display.className = "grid";
+    display.innerHTML = data
+        .map(member => `
+            <section>
+                <img src="${member.image}" alt="${member.name}">
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
-                <a href="${member.website}" target="_blank">Website</a>
-            </div>
-        `;
-
-        container.appendChild(memberCard);
-    });
+                <a href="${member.website}" target="_blank">Visit Website</a>
+            </section>
+        `)
+        .join("");
 }
 
-function toggleView(view) {
-    const toggleButtons = document.querySelectorAll('.toggle-button');
-    toggleButtons.forEach(button => button.classList.remove('active'));
-    document.getElementById(view).classList.add('active');
-    loadMembers(view);
+// Render list layout
+function renderList(data) {
+    display.className = "list";
+    display.innerHTML = data
+        .map(member => `
+            <section>
+                <img src="${member.image}" alt="${member.name}">
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">Visit Website</a>
+            </section>
+        `)
+        .join("");
 }
 
-function setFooterInfo() {
-    const yearElement = document.getElementById('year');
-    const lastModifiedElement = document.getElementById('last-modified');
-    yearElement.textContent = new Date().getFullYear();
-    lastModifiedElement.textContent = document.lastModified;
+// Setup event listeners for buttons
+function setupEventListeners(data) {
+    gridButton.addEventListener("click", () => renderGrid(data));
+    listButton.addEventListener("click", () => renderList(data));
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    loadMembers(); 
-    setFooterInfo();
-
-    document.getElementById('grid').addEventListener('click', () => toggleView('grid'));
-    document.getElementById('list').addEventListener('click', () => toggleView('list'));
-});
