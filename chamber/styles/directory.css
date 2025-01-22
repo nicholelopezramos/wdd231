@@ -129,7 +129,6 @@ nav.show {
     padding: 0.7rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
 }
 
 .hero-text .btn:hover {
