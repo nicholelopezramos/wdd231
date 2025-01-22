@@ -1,129 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Chamber of Commerce Directory">
         <meta name="author" content="Ivan Ponce">
+        <meta name="keywords" content="Timbuktu, Chamber of Commerce, Business Directory, Local Businesses, Networking">
         <meta property="og:title" content="Chamber of Commerce Directory">
         <meta property="og:type" content="website">
         <meta property="og:image" content="images/favicon.png">
-        <meta property="og:url" content="https://">
+        <meta property="og:url"
+            content="https://cdn.britannica.com/84/178084-050-6AB3D1F1/Sankore-mosque-Timbuktu-Mali.jpg">
         <title>Directory - Chamber of Commerce</title>
         <link rel="icon" href="images/favicon.png">
         <link rel="stylesheet" href="styles/directory.css">
-        <script defer src="scripts/directory.js"></script>
+        <link rel="stylesheet" href="large.css">
     </head>
-<body>
-    <header>
-        <div class="header-left">
-            <img src="logo.png" alt="Website Logo" class="logo">
-            <h1>Timbuktu Chamber of Commerce</h1>
-          </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="hero">
-            <img id="hero-img" src="" alt="Image">
-            <div class="hero-text">
-                <h1>Welcome to the Timbuktu Chamber of Commerce</h1>
-                
-                <a class="btn" href="about.html">Learn More</a>
+    <body>
+        <header>
+            <div class="header-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFFCmdI2OE2driaAFpYSgFxvhsH-lHSsT6Ow&s"
+                    alt="Website Logo" class="logo">
+                <h1>Timbuktu Chamber of Commerce</h1>
             </div>
-        </section>
+            <button class="hamburger" id="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <nav>
+                <ul class="image-container">
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFr2SZus-CPJP8tYfj_8Ch_QUYXrsyk1hgsQ&s"
+                            alt="Timbuktu">
+                    </li>
+                </ul>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <section id="about">
-            <h2>Site Name</h2>
-            <h3>Timbuktu Chamber of Commerce</h3>
+        <main>
+            <section id="hero">
+                <div class="hero-text">
+                    <h1>Welcome to the Timbuktu Chamber of Commerce</h1>
+                    <a class="btn" href="about.html">Keynote Tickets</a>
+                </div>
+            </section>
+        
+            <section id="about">
+                <h2>Site Name</h2>
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <section class="dynamic-info">
+                    <div class="info-card" id="events">
+                        <h3>Events</h3>
+                        <div class="content">
+                            <p>No events at the moment.</p>
+                        </div>
+                    </div>
+                    <div class="info-card" id="current-weather">
+                        <h3>Current Weather</h3>
+                        <div class="content">
+                            <p><strong>75°F</strong></p>
+                            <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Partly Cloudy"
+                                class="weather-icon">
+                            <p>Partly Cloudy</p>
+                            <p>High: 85°F</p>
+                            <p>Low: 52°F</p>
+                            <p>Humidity: 34%</p>
+                            <p>Sunrise: 7:30am</p>
+                            <p>Sunset: 9:59pm</p>
+                        </div>
+                    </div>
+                    <div class="info-card" id="weather-forecast">
+                        <h3>Weather Forecast</h3>
+                        <div class="content">
+                            <p>Today: <strong>90°F</strong></p>
+                            <p>Wednesday: <strong>89°F</strong></p>
+                            <p>Thursday: <strong>68°F</strong></p>
+                        </div>
+                    </div>
+                </section>
+            </section> 
+        
+            <section id="directory">
+                <h2>Member Directory</h2>
+                <div id="company-container"></div>
+            </section>
+            <section id="join">
+                <h2>Join Us</h2>
+                <p>Become part of a vibrant business community today.</p>
+                <a class="btn" href="join.html">Join Now</a>
+            </section>
+        </main>
+        
 
-            <h2>Site Purpose</h2>
-            <p>
-                This website will serve as a resource hub for businesses in the city of Timbuktu. 
-                The site will provide information on local events, host networking opportunities, 
-                create business directories, and encourage local shopping. 
-                It aims to promote local economic growth, support local businesses, 
-                and foster a sense of community between the businesses.
-            </p>
+        <footer>
+            <p>WDD231 Class Project Nichole L. Ramos &copy; 20XX - Timbuktu Chamber of Commerce</p>
+            <nav>
+                <a href="https://byui-cse.github.io/wdd231-ww-course/week01/chamber-site-plan.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+            <div class="social">
+                <a href="https://youtube.com">
+                    <img src="images/freepik__adjust__23466.png" alt="Youtube icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter icon">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin.png" alt="Instagram icon">
+                </a>
+            </div>
+        </footer>
+        <script defer src="scripts/directory.js"></script>
+    </body>
 
-            <h2>Target Market</h2>
-            <p>
-                Business owners and patrons in the city of Timbuktu and surrounding areas.
-            </p>
-
-            <h2>Site Goals</h2>
-            <ul>
-                <li>Improve member engagement by providing valuable resources and networking opportunities.</li>
-                <li>Attract new businesses and encourage economic development in the community.</li>
-                <li>Improve the visibility and reputation of the chamber as a trusted authority in local business matters.</li>
-            </ul>
-
-            <h2>Personas</h2>
-            <ul>
-                <li><strong>Small Business Owner:</strong> Maria is a 35-year-old entrepreneur who owns a small boutique shop in town. She is looking for networking opportunities, business resources, and marketing support to help grow her business.</li>
-                <li><strong>Corporate Executive:</strong> Diego is a 47-year-old executive at a large company looking for growth opportunities. His company is interested in partnership opportunities, economic development resources, and networking with other business leaders in the area.</li>
-                <li><strong>The New Resident:</strong> Francisco recently moved into the community and is looking to learn more about services available in the area. He is interested in finding business directories, event calendars, and community service opportunities.</li>
-            </ul>
-        </section>
-
-        <section id="scenarios">
-            <h2>Scenarios</h2>
-            <ul>
-                <li>
-                    <strong>Local Business Owner:</strong> A local business owner is interested in joining the chamber of commerce to network with other business owners. They visit the website to find information on membership benefits, fees, and how to apply.
-                </li>
-                <li>
-                    <strong>Community Member:</strong> A community member is looking for upcoming events and workshops hosted by the chamber. They visit the website to browse the events calendar and register for interesting activities.
-                </li>
-                <li>
-                    <strong>Visitor:</strong> A visitor from out of town is considering relocating to the area and wants to learn more about the local business environment. They explore the chamber's website for information on existing businesses, availability of skilled labor, and quality of life in the area.
-                </li>
-            </ul>
-        </section>
-
-        <section id="seo-plan">
-            <h2>SEO Plan</h2>
-            <ul>
-                <li>Use relevant keywords in site descriptions, content, and blog posts.</li>
-                <li>Verify the site on Google's Business Profile.</li>
-                <li>Get inbound links or backlinks from all member businesses to improve rankings.</li>
-                <li>Embed Google Analytics in all site pages.</li>
-            </ul>
-        </section>
-
-        <section id="join">
-            <h2>Join Us</h2>
-            <p>Become part of a vibrant business community today.</p>
-            <a class="btn" href="join.html">Join Now</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>WDD231 Class Project
-            Nichole L. Ramos &copy; 20XX - Timbuktu Chamber of Commerce</p>
-        <nav>
-            <a href="">Site Plan</a>
-            <a href="contactus.html">Contact us</a>
-            <a href="">FAQ</a>
-        </nav>
-        <div class="social">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook icon">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Twitter icon">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram icon">
-            </a>
-        </div>
-    </footer>
-</body>
 </html>
