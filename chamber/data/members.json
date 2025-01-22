@@ -1,74 +1,65 @@
 [
-    {
-      "name": "Oceanic Ventures Ltd.",
-      "address": "12 Coral Reef Drive, Nassau, Bahamas",
-      "phone_number": "+1-242-555-7890",
-      "website_url": "https://www.oceanicventures.com",
-      "icon_file_name": "oceanic_logo.png",
-      "membership_level": 2,
-      "images": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQArQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQMEBQYHAgj/xAA3EAABBAIABAMFBQcFAAAAAAABAAIDBAURBhIhMUFRYQcTFCJxMoGRobEjM0JDUsHRFRZiY3L/xAAaAQEAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QAIhEBAQACAgICAgMAAAAAAAAAAAECAwQREhMhMVGRBUFh/9oADAMBAAIRAxEAPwDuKIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICKNoXAd0EooDgU2glFG+iAoJREQEREBERAREQEREBERAREQFG1KpudyNLnkBoGyfJYt6Elw/DzWKyeajq/LFWnsOH9DflH3rTs9xNNemfHVkMdZp0C3oX+u1hY70sTg+OaRrh4tcVScn+Vkvhh+1to/jLZ5Z/ptk3GNnm02rGzXdrnHa9Q8auBAs1AR5xu/wAqlifh+KqM0VxrW3YNalYNbB7H8e61C42WnamrTdJInFrh5KLs38rXJsmfcqTr0cXZbryw6sdVxeapZNmq0vz62WO6OH3LIjwXEmXJIZGyRSFj2nbXNOiF0fg3iQZeM1rDmi5GNnX8xvmFZcPn+6+Oc+UDl8L1Tyw+m0oo2pVorxERAREQEREBERAREQEREA9lq/HuSNHD+5jdqSy7k6Hry+K2g9loftCpNu26nPk6NQRsd8lmTlJ2R1/JRuXcvVfH7d+NMfbPL6aK6f1VMz+qzNXhGS6QKubxUx8o5if7L3a4RGNcHZnKxQQ9yYoJHkj06Lz+PB2X+l5lzdf5Zf2Yh8lu/No+7bG1m/XZOlr3Gd2KbiW++BwLQ9rNjxIaAfzCurnGdDGYz/TOFYpGMO+ezL0c4+JHmencrSnzkkkkkk9TvupO3r046p89I2ru7rtvx2vnT9T1VbF5WTG5GC5CTzRP5iN9x4j8FhnTqmZ1wwwuOUsSM8/KWV9K1Zm2YI54ztkjQ4fQqsFr3AE7rPCGLkf39yG/h0WwhekwtuMteeynjlYlERbsCIiAiIgIiICIiAiIgHsuW+2Gu5kuOuNHyEPicfXoR/ddSWB4ywQz+AsUwQ2bXPC4+Dx2/wALjv1+zC4uunPwzmTgLpiDsHRHYjoVsXD3HeSw7xHYeb1I9HwSu27X/En9CtOsOkglfDOx0Usbix7H92uHQhUHT+qq8McsL8LPPLHOfLuj+HuGuN8f8fjCK0zu8kADXMd5PZ2XNuKeGMrw3IfjI/eVj9izEPkP18Wn6rE8McU3OGskLlR3Mx2hPCT8srf8+RXfsDm8TxbiTLVfHYie3lmgkAJafJwUua8Ns/1DueWq/mPnMz+q8OnIG11riP2RVp5XT8P2xVBOzXm25jf/ACe4CsOF/ZbAzLgZjLQ2JaxbI+pW7jr8vOT2B128VrOLZW95MsdI4MpOx/C+MrSDUjK7OYeutn9VmgvLG6AGgB6L2p+M6nSDb3exERbMCIiAiIgIiICIiAignSbQSvJGxranZ8k2UGg+0X2es4ja7IYx0cGVa3XzdGTgdg719VwjM43J4Sw6tlqc1SRp7SN6H6OHQ/cvrU9Vb26VW9CYbkEU8Z7tkYHD81yy1S3t1x22Tp8gOn9T+i9VclYoWW2admWtYb0EsTy1wHlsd/ovpiz7NeD7D+Z2DqtP/WC39FeYzgnhjFSCSjhaccg/jMYcfzWJq6Lt7cf4Yq+0XjPkZJlslUxZ/eWpXe62PJoADnH8vVdr4c4fo8OYyOhjWcsYPM97urpXHu5x8SVlAGjo3Q0OgCnel1k6c8r2lSvPN9FO1lhKIEQEREBERAREQEREEHrsLV+E8nbnxGTs25X2HwXLDGbAGmscQ0dPQLZ3LAPwtXDRSWsfBZkcJTK6AWHlrnOPzO5d6J6k9kGvPzOU/wBit4qZkXC0IzYdXIb7kt3+75dbHTpve9pxZnrtTIEsu26cJxDrQbGxrg2XfTm2D08D4K+fj6sEtiCHDzmBkrpTVbI/3JkbyuD+TtolxPTxb1G1eTxQWM1UtzY6SR1iKWu+U83K2LmIALda07ugsuIsjlK8fDMYsvE1yUR2vg+U+8/Z8x5SQQOo7qrxHnLuDq4eWJk0rOZ0l0TAe89w0acTrpsF7D08l5sYmlHX+GjoWzFityUmsmkDhsDqwg9hsjW/A6VV5Yw1nS4q5ORDLAXFzpByOeAS7fUhwbvZ/pHmg9YniN+S4tkpxOBxxoiWs4fzSHkOd9PAfRXGfu2oOIuH60Fh8cNqaRszG608CMkb8uo8FbNhr07cdyLEys+DPwVcxFw/Yhx5iW9tDod+Kr393MgZ5MbM6bGiSSpIHENeeUDQ14nZGigw+Qu56bO5mvibcrpKr6xrQcrTHp/2+bY3rW/Hor6bKW63FjKmTfZr1rEjRQlh17l5180b+m+Y6P8AbXjkIoIqltuTgqS/EZF8bLDg5xLW/wAO2+Gux+8+Cs5mxOngtvo2ZpfeyTNie55jjmaeUFrT0DiCSPDoUFhXy2Rdw3xRZdclNincmjgfpu42tDS0Aa0e57q7y/EkuH4how2df6W+u0WJ3fypHn5CfQ8rt/cplp0/iMlO3HWvfPcZJa0bntZZe08rS4fZJOgfpraubMFW/eMdnFTT170URkkkaS1vLstBafs6/UkFA4SzljMW8uLDDE2GdnuIyNEROYC0n1O9+m9eC2VY+tjKtfIWL0TCyxZ5RMec6doaHTsr8dkEoiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD//Z",
-      "notes": "Specializes in marine exploration and eco-tourism"
-    },
-    {
-      "name": "Aurora Skincare Co.",
-      "address": "88 Sunset Boulevard, Reykjavik, Iceland",
-      "phone_number": "+354-555-1122",
-      "website_url": "https://www.auroraskincare.is",
-      "icon_file_name": "aurora_logo.png",
-      "membership_level": 3,
-      "images":"data:image/png;base64,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",
-      "notes": "Offers organic skincare products made from Arctic botanicals"
-    },
-    {
-      "name": "Redwood Robotics",
-      "address": "345 Industrial Lane, Palo Alto, CA, USA",
-      "phone_number": "+1-650-555-6789",
-      "website_url": "https://www.redwoodrobotics.com",
-      "icon_file_name": "redwood_logo.png",
-      "membership_level": 1,
-      "images": "data:image/jpeg;base64,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",
-      "notes": "Develops collaborative robotics for industrial automation"
-    },
-    {
-      "name": "Desert Breeze Resort",
-      "address": "202 Mirage Lane, Dubai, UAE",
-      "phone_number": "+971-4-555-9876",
-      "website_url": "https://www.desertbreezeresort.ae",
-      "icon_file_name": "desertbreeze_logo.png",
-      "membership_level": 2,
-      "images":"data:image/png;base64,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",
-      "notes": "Luxury desert resort with unique sandboarding experiences"
-    },
-    {
-      "name": "Skyline Aerials",
-      "address": "678 Cloud Street, Wellington, New Zealand",
-      "phone_number": "+64-4-555-3344",
-      "website_url": "https://www.skylineaerials.nz",
-      "icon_file_name": "skyline_logo.png",
-      "membership_level": 3,
-      "images":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicdrhVQT13rYoFWc8L6SKF8gITrSNtTZpvQ&s",
-      "notes": "Provides top-notch drone photography and videography services"
-    },
-    {
-      "name": "Fusion Tech Solutions",
-      "address": "94 Innovation Parkway, Bangalore, India",
-      "phone_number": "+91-80-555-6677",
-      "website_url": "https://www.fusiontech.co.in",
-      "icon_file_name": "fusiontech_logo.png",
-      "membership_level": 1,
-      "images":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTitXlbzug9KqCHaOhq61rZaOEaZet5ufnOSQ&s",
-      "notes": "IT consulting and software development for startups"
-    },
-    {
-      "name": "Polar Expeditions",
-      "address": "55 Glacier Road, Anchorage, AK, USA",
-      "phone_number": "+1-907-555-8822",
-      "website_url": "https://www.polarexpeditions.com",
-      "icon_file_name": "polar_logo.png",
-      "membership_level": 2,
-      "images":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDm8i6ocgjGHGcEWN7gA_XB7bTbQHjADZlcw&s",
-      "notes": "Adventure company specializing in Arctic and Antarctic tours"
-    }
-  ]
-  
-  
+  {
+    "name": "Oceanic Ventures Ltd.",
+    "address": "12 Coral Reef Drive, Nassau, Bahamas",
+    "phone_number": "+1-242-555-7890",
+    "website_url": "https://www.oceanicventures.com",
+    "icon_file_name": "1",
+    "image": "1.jpg",
+    "notes": "Specializes in marine exploration and eco-tourism"
+  },
+  {
+    "name": "Aurora Skincare Co.",
+    "address": "88 Sunset Boulevard, Reykjavik, Iceland",
+    "phone_number": "+354-555-1122",
+    "website_url": "https://www.auroraskincare.is",
+    "icon_file_name": "2",
+    "image": "2.jpg",
+    "notes": "Offers organic skincare products made from Arctic botanicals"
+  },
+  {
+    "name": "Redwood Robotics",
+    "address": "345 Industrial Lane, Palo Alto, CA, USA",
+    "phone_number": "+1-650-555-6789",
+    "website_url": "https://www.redwoodrobotics.com",
+    "icon_file_name": "3",
+    "image": "3.png",
+    "notes": "Develops collaborative robotics for industrial automation"
+  },
+  {
+    "name": "Desert Breeze Resort",
+    "address": "202 Mirage Lane, Dubai, UAE",
+    "phone_number": "+971-4-555-9876",
+    "website_url": "https://www.desertbreezeresort.ae",
+    "icon_file_name": "4",
+    "image": "4.jpeg",
+    "notes": "Luxury desert resort with unique sandboarding experiences"
+  },
+  {
+    "name": "Skyline Aerials",
+    "address": "678 Cloud Street, Wellington, New Zealand",
+    "phone_number": "+64-4-555-3344",
+    "website_url": "https://www.skylineaerials.nz",
+    "icon_file_name": "5",
+    "image": "5.jpg",
+    "notes": "Provides top-notch drone photography and videography services"
+  },
+  {
+    "name": "Fusion Tech Solutions",
+    "address": "94 Innovation Parkway, Bangalore, India",
+    "phone_number": "+91-80-555-6677",
+    "website_url": "https://www.fusiontech.co.in",
+    "icon_file_name": "6",
+    "image": "6.jpg",
+    "notes": "IT consulting and software development for startups"
+  },
+  {
+    "name": "Polar Expeditions",
+    "address": "55 Glacier Road, Anchorage, AK, USA",
+    "phone_number": "+1-907-555-8822",
+    "website_url": "https://www.polarexpeditions.com",
+    "icon_file_name": "7",
+    "image": "7.jpg",
+    "notes": "Adventure company specializing in Arctic and Antarctic tours"
+  }
+]

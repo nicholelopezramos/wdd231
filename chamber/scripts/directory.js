@@ -1,32 +1,27 @@
 async function displayCompanies() {
   try {
-    // Fetch the JSON data
-    const response = await fetch('./data/members.json'); // Adjust the path if necessary
+    const response = await fetch('./data/members.json'); 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    // Parse the JSON data
     const companies = await response.json();
 
-    // Get the container where company data will be displayed
     const container = document.getElementById("company-container");
 
-    // Loop through the companies and generate HTML
     companies.forEach(company => {
       const companyDiv = document.createElement("div");
       companyDiv.classList.add("company");
 
       companyDiv.innerHTML = `
               <h3>${company.name}</h3>
-              <img src="${company.icon_file_name}" alt="${company.name} Logo" onerror="this.style.display='none'">
+              <img src="../chamber/images/${company.image}" alt="${company.name} Logo" onerror="this.style.display='none'">
               <p><strong>Address:</strong> ${company.address}</p>
               <p><strong>Phone:</strong> ${company.phone_number}</p>
               <p><strong>Website:</strong> <a href="${company.website_url}" target="_blank">${company.website_url}</a></p>
               
           `;
 
-      // Append the companyDiv to the container
       container.appendChild(companyDiv);
     });
   } catch (error) {
@@ -34,11 +29,9 @@ async function displayCompanies() {
   }
 }
 
-// Call the function when the page loads
 displayCompanies();
 
 
-// Hamburger Menu functionality
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 if (hamburger && navMenu) {
@@ -47,7 +40,6 @@ if (hamburger && navMenu) {
   });
 }
 
-// Mock Data for Weather and Events
 const eventsData = "No events available at this time.";
 const currentWeatherData = {
   temperature: "75°F",
@@ -65,10 +57,8 @@ const forecastData = [
   { day: "Thursday", temperature: "68°F" }
 ];
 
-// Populate Events
 document.getElementById("events").querySelector(".content").innerHTML = `<p>${eventsData}</p>`;
 
-// Populate Current Weather
 document.getElementById("current-weather").querySelector(".content").innerHTML = `
     <p><strong>${currentWeatherData.temperature}</strong></p>
     <img src="${currentWeatherData.icon}" alt="${currentWeatherData.condition}" class="weather-icon">
