@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Page</title>
+        <link rel="stylesheet" href="styles/join.css">
+        <link rel="stylesheet" href="scripts/join.js">
+    </head>
+
+    <body>
+        <header>
+            <h1>Join Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form action="thankyou.html" method="get" id="joinForm">
+                <h2>Membership Application</h2>
+
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required title="Your first name"
+                    autocomplete="given-name" />
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required title="Your last name"
+                    autocomplete="family-name" />
+
+                <label for="orgTitle">Organizational Title</label>
+                <input type="text" id="orgTitle" name="orgTitle" required title="Your organizational title"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required title="Your email address" autocomplete="email"
+                    placeholder="example@domain.com" />
+
+                <label for="phone">Mobile Phone Number</label>
+                <input type="tel" id="phone" name="phone" required title="Your mobile number" autocomplete="tel" />
+
+                <label for="businessName">Business Name</label>
+                <input type="text" id="businessName" name="businessName" required
+                    title="Your business/organization name" autocomplete="organization" />
+
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label for="npMembership">
+                        <input type="radio" id="npMembership" name="membership" value="NP" /> NP Membership (Non-Profit
+                        - Free)
+                    </label>
+                    <label for="bronzeMembership">
+                        <input type="radio" id="bronzeMembership" name="membership" value="Bronze" /> Bronze Membership
+                    </label>
+                    <label for="silverMembership">
+                        <input type="radio" id="silverMembership" name="membership" value="Silver" /> Silver Membership
+                    </label>
+                    <label for="goldMembership">
+                        <input type="radio" id="goldMembership" name="membership" value="Gold" /> Gold Membership
+                    </label>
+                </fieldset>
+
+                <label for="businessDescription">Business/Organization Description</label>
+                <textarea id="businessDescription" name="businessDescription" required
+                    title="Description of your business"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>" />
+
+                <input type="submit" value="Submit Application" />
+            </form>
+
+            <div class="cards-container">
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <p>No fee</p>
+                    <a href="#" data-modal="npModal">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <p>$50/year</p>
+                    <a href="#" data-modal="bronzeModal">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <p>$100/year</p>
+                    <a href="#" data-modal="silverModal">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <h3>Gold Membership</h3>
+                    <p>$200/year</p>
+                    <a href="#" data-modal="goldModal">Learn More</a>
+                </div>
+            </div>
+        </main>
+
+        <div class="modal" id="npModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>Free membership for non-profits</li>
+                    <li>Access to all chamber events</li>
+                    <li>Basic promotional listing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="bronzeModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>Access to chamber events</li>
+                    <li>Promotional listing on website</li>
+                    <li>10% discount on event tickets</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="silverModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Premium event seating</li>
+                    <li>Spotlight on homepage</li>
+                    <li>20% discount on event tickets</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="goldModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Exclusive networking events</li>
+                    <li>VIP status at events</li>
+                    <li>25% discount on event tickets</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Nichole Ramos, Philippines</p>
+            
+            <p>&copy; 2025 Chamber of Commerce | All rights reserved</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

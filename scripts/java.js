@@ -1,12 +1,12 @@
 function setFooterInfo() {
-    const yearSpan = document.getElementById("currentyear"); 
+    const yearSpan = document.getElementById("currentyear");
     if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear(); 
+        yearSpan.textContent = new Date().getFullYear();
     }
 
     const lastModified = document.getElementById("lastModified");
     if (lastModified) {
-        lastModified.textContent = `Last Modified: ${document.lastModified}`; 
+        lastModified.textContent = `Last Modified: ${document.lastModified}`;
     }
 }
 
@@ -102,20 +102,57 @@ const courses = [
         completed: false
     }
 ]
+const courseDetails = document.getElementById("course-details");
+
+function setFooterInfo() {
+    const yearSpan = document.getElementById("currentyear");
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
+    const lastModified = document.getElementById("lastModified");
+    if (lastModified) {
+        lastModified.textContent = `Last Modified: ${document.lastModified}`;
+    }
+}
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    document.getElementById("closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
 function renderCourses(filter = 'All') {
     const courseGrid = document.querySelector('.course-grid');
     if (!courseGrid) return;
 
-    const filteredCourses = courses.filter(course => 
+    const filteredCourses = courses.filter(course =>
         filter === 'All' || course.subject === filter
     );
 
-    courseGrid.innerHTML = filteredCourses.map(course => `
-        <div class="course ${course.completed ? 'completed' : 'not-completed'}">
+    courseGrid.innerHTML = filteredCourses.map((course, index) => `
+        <div class="course ${course.completed ? 'completed' : 'not-completed'}" data-index="${index}">
             <h3>${course.subject} ${course.number}</h3>
             <p>Status: ${course.completed ? '✅ Completed' : '❌ Not Completed'}</p>
         </div>
     `).join('');
+
+    document.querySelectorAll('.course').forEach((courseDiv, index) => {
+        courseDiv.addEventListener("click", () => {
+            displayCourseDetails(filteredCourses[index]);
+        });
+    });
 
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     const totalCreditsElement = document.querySelector('.total-credits');
@@ -125,14 +162,25 @@ function renderCourses(filter = 'All') {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    setFooterInfo();
     renderCourses();
 
-    document.querySelector('.filter-buttons').addEventListener('click', (event) => {
-        if (event.target.tagName === 'BUTTON') {
-            const filter = event.target.textContent;
-            renderCourses(filter);
-        }
-    });
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.querySelector("nav ul");
 
-    setFooterInfo();
+    if (hamburger && navMenu) {
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    }
+
+    const filterButtons = document.querySelector('.filter-buttons');
+    if (filterButtons) {
+        filterButtons.addEventListener('click', (event) => {
+            if (event.target.tagName === 'BUTTON') {
+                const filter = event.target.textContent;
+                renderCourses(filter);
+            }
+        });
+    }
 });
