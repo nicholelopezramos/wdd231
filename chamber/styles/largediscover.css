@@ -1,4 +1,3 @@
-/* Large Screens (1025px and above) */
 @media (min-width: 1025px) {
     #directory-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -8,7 +7,6 @@
     }
 }
 
-/* Assigning Grid Areas to Cards */
 .card:nth-child(1) {
     grid-area: card1;
 }
@@ -33,18 +31,4 @@
     grid-area: card6;
 }
 
-/* Card Styling */
-.card {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
 

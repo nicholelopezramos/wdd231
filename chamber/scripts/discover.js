@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("directory-container");
     const visitMessage = document.getElementById("visit-message");
 
-    // Visitor tracking
     const lastVisit = localStorage.getItem("lastVisit");
     const currentDate = new Date();
 
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     localStorage.setItem("lastVisit", currentDate.getTime());
 
-    // Function to create a card
     function createCard(item) {
         const card = document.createElement("article");
         card.classList.add("card");
@@ -36,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return card;
     }
 
-    // Fetch and display cards from discover.json
     fetch("data/discover.json")
         .then(response => {
             if (!response.ok) throw new Error("Network response was not ok");
@@ -45,14 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             data.forEach((item, index) => {
                 const card = createCard(item);
-                // Assign specific grid-area if needed
                 card.style.gridArea = `card${index + 1}`;
                 container.appendChild(card);
             });
         })
         .catch(error => console.error("Error loading discover.json:", error));
 
-    // Hamburger menu toggle
     const hamburger = document.getElementById("hamburger");
     const navMenu = document.getElementById("nav-menu");
 
