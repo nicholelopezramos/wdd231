@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Taal Lake",
+        "address": "Taal, Batangas",
+        "description": "The water on the Taal Volcano Crater is bluish green color because its a salt water from the ocean. On the shore of the crater, you can also see some small hot surfacea that emit smoke coming from its tiny hole. The plants are dry and the whitish part seems like crater ashes. Probably, those are sulfur from the volcano.",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/7e/0f/ab/the-water-on-the-crater.jpg?w=500&h=400&s=1"
+    },
+    {
+        "name": "Monte Maria",
+        "address": "Brgy. Pagkilatan, Batangas City, Luzon 4200, Philippines",
+        "description": "Monte Maria Pilgrimmage site is worth the visit. It takes about 30-45 mins from Batangas city. Its situated on the highest point of bgy Pagkilatan which has a great view of the sea below and Tingloy Island. Great way to reflect and enjoy the view as well.",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/03/df/0f/20191102124526-img-1299.jpg?w=500&h=-1&s=1"
+    },
+    {
+        "name": "Pagsanjan Falls",
+        "address": "Pagsanjan Falls, Cavinti, Luzon 4013 Philippines",
+        "description": "Leave driving and negotiating with boatmen to the experts and sit back and enjoy the scenery on this private guided shore excursion to the dazzling Pagsanjan Falls, as seen in the film “Apocalypse Now”. Ride a traditional canoe through the towering gorge, then float through the falls themselves on a bamboo raft. Enjoy lunch along the way.",
+        "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/70/14/4e.jpg"
+    },
+    {
+        "name": "VILLA ESCUDERO",
+        "address": "Villa Escudero, Km 91, Tiaong, Luzon 4325 Philippines",
+        "description": "Get in touch with the culture and history of the Philippines on this tour of the Villa Escudero from Manila. Visit a museum to see the country's largest collection of private antiquities, paddle a bamboo raft down the river, take a carabao cart ride, and eat lunch by a roaring waterfall. This tour also includes exclusive access to the villa's pool and round-trip transportation from Manila and Makati hotels.",
+        "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/02/f2/4c.jpg"
+    },
+    {
+        "name": "Taal Volcano",
+        "address": "Museo Orlina, Hollywood Subdivision Road Brgy. Tolentino East, Tagaytay, Luzon 4120 Philippines",
+        "description": "Maximize your time in Manila port with this private guided shore excursion to perhaps the worlds most adorable volcano: little Taal Volcano, set within its own crater lake. Capture gorgeous photos from Peoples Park in the Sky, an abandoned presidential palace; see a 19th-century bamboo organ in St. Joseph Church; and tour a factory that makes jeepneys, a Philippine travel icon. Includes a local lunch, soft drinks, and bottled water.",
+        "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/71/9b/71.jpg"
+    },
+    {
+        "name": "Museo Orlina",
+        "address": " Museo Orlina, Hollywood Subdivision Road Brgy. Tolentino East, Tagaytay, Luzon 4120 Philippines",
+        "description": "MUSEO ORLINA is the showcase of the artistry of internationally acclaimed Ramon Orlina, pioneer and foremost practitioner of glass sculpture in the country. Before Orlina, glass was largely appreciated only for its utilitarian function: as drinking vessels, window glass panes, or automotive wind shields. A visionary, Orlina saw beyond the humble origin of this industrial glass residue. The result is an exultant body of works that, through the decades, have dazzled the art scene and prized by numerous collectors. Triumphantly, Orlina has transformed the medium by elevating it to the dignity and respectability of art.",
+        "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/67/b0/0e.jpg"
+    },
+    {
+        "name": "Mt. Manabu",
+        "address": "Sto. Tomas Batangas",
+        "description": "Mt. Manabu is simply among the all-time favorites of seasoned mountaineers. Newcomers would also do best to start on this mountain. Not only that it has one of the richest natural environments among the mountains in Batangas but it promises an enriching experience that first-time hikers would definitely learn from and would certainly make them love the sport. Its trail is a right combination of both chill and challenge. Chill because it’s fairly an easy hike with only a handful of assaults towards the summit. Challenge as it involves river crossing and steep assaults as you approach the peak. With the abundance of more glorified mountains around, Mt. Manabu stands out from the rest as it offers not just a stunning view at its peak but moments with strangers and new found friends over a cup of Alamid/Civet coffee you would surely cherish for the rest of your days.",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/34/2e/d8/a-part-of-the-360-view.jpg?w=900&h=500&s=1"
+    },
+    {
+        "name": "Layag-Layag Reef",
+        "address": "Tingloy, Batangas, Philippines",
+        "description": "Layag-Layag is a popular dive site located in Tingloy, Batangas, known for its beautiful coral formations and diverse marine life. Here’s a detailed overview of the Layag-Layag dive site",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/63/33/db/layag.jpg?w=1000&h=-1&s=1"
+    }
+]
