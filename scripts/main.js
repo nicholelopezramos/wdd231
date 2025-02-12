@@ -1,4 +1,4 @@
-import { fetchBooks } from "./api.js";
+import { fetchBooks } from "https://nicholelopezramos.github.io/wdd231/bookwebsite.html/api.js";
 import { saveSearchTerm, getSearchTerm } from "./storage.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
