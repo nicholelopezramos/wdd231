@@ -15,28 +15,6 @@ async function loadBooks() {
 function displayBooks(bookArray) {
     const bookList = document.getElementById("bookList");
     bookList.innerHTML = ""; // Clear previous results
-    bookArray.forEach(book => {
-        let li = document.createElement("li");
-        li.className = "book-item";
-        li.innerHTML = `<a href="${book.link}" target="_blank">${book.title} - <em>${book.author}</em></a>`;
-        bookList.appendChild(li);
-    });
-}
-
-function searchBook() {
-    let query = document.getElementById("searchBar").value.toLowerCase();
-    let filteredBooks = books.filter(book =>
-        book.title.toLowerCase().includes(query) ||
-        book.author.toLowerCase().includes(query)
-    );
-    displayBooks(filteredBooks);
-}
-
-loadBooks();
-
-function displayBooks(bookArray) {
-    const bookList = document.getElementById("bookList");
-    bookList.innerHTML = "";
 
     bookArray.forEach(book => {
         let li = document.createElement("li");
@@ -44,7 +22,7 @@ function displayBooks(bookArray) {
         li.innerHTML = `
             <div class="book-card">
                 <a href="${book.link}" target="_blank">
-                    <img src="${book.image}" alt="${book.title}" class="book-image">
+                    <img src="${book.image || 'fallback.jpg'}" alt="${book.title}" class="book-image">
                 </a>
                 <div class="book-info">
                     <h3>${book.title}</h3>
@@ -54,9 +32,22 @@ function displayBooks(bookArray) {
         `;
         bookList.appendChild(li);
     });
-}
-document.addEventListener("DOMContentLoaded", () => {
+
+    // Lazy loading images (applies after books are added)
     document.querySelectorAll("img[data-src]").forEach(img => {
         img.src = img.dataset.src;
     });
-});
+}
+
+// Function to Search Books
+function searchBook() {
+    let query = document.getElementById("searchBar").value.toLowerCase();
+    let filteredBooks = books.filter(book =>
+        book.title.toLowerCase().includes(query) ||
+        book.author.toLowerCase().includes(query)
+    );
+    displayBooks(filteredBooks);
+}
+
+// Load books when page loads
+document.addEventListener("DOMContentLoaded", loadBooks);
