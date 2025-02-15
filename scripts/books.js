@@ -21,21 +21,16 @@ function displayBooks(bookArray) {
         li.className = "book-item";
         li.innerHTML = `
             <div class="book-card">
-                <a href="${book.link}" target="_blank">
-                    <img src="${book.image || 'fallback.jpg'}" alt="${book.title}" class="book-image">
+                <a href="${book.p}" target="_blank">
+                    <img src="${book.c || 'fallback.jpg'}" alt="${book.t}" class="book-image">
                 </a>
                 <div class="book-info">
-                    <h3>${book.title}</h3>
-                    <p><em>by ${book.author}</em></p>
+                    <h3>${book.t}</h3>
+                    <p><em>by ${book.a}</em></p>
                 </div>
             </div>
         `;
         bookList.appendChild(li);
-    });
-
-    // Lazy loading images (applies after books are added)
-    document.querySelectorAll("img[data-src]").forEach(img => {
-        img.src = img.dataset.src;
     });
 }
 
@@ -43,8 +38,8 @@ function displayBooks(bookArray) {
 function searchBook() {
     let query = document.getElementById("searchBar").value.toLowerCase();
     let filteredBooks = books.filter(book =>
-        book.title.toLowerCase().includes(query) ||
-        book.author.toLowerCase().includes(query)
+        book.t.toLowerCase().includes(query) ||
+        book.a.toLowerCase().includes(query)
     );
     displayBooks(filteredBooks);
 }

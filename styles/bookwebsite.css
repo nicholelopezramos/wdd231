@@ -1,181 +1,165 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+footer,
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center
+}
+
+body,
+footer,
+header,
+nav a {
+    color: #fff
+}
+
+header,
+main {
+    padding: 20px
+}
+
+.book-grid,
+.container,
+main {
+    display: grid
+}
+
+.modal a,
+nav a {
+    text-decoration: none
+}
+
+.close,
+button {
+    cursor: pointer;
+    font-weight: 700
+}
+
+.book,
+.modal a,
+.modal-content,
+.nav-item,
+body,
+footer,
+header,
+nav {
+    text-align: center
 }
 
 .container {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer";
+    grid-template-areas: "header" "nav" "main" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    max-width: 1200px;
-    margin: auto;
-    padding: 10px;
-}
-
-header {
-    grid-area: header;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    grid-template-rows: auto
 }
 
 nav {
     grid-area: nav;
     background-color: #444;
-    text-align: center;
-    padding: 10px;
+    padding: 10px
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
     margin: 0 15px;
-    font-size: 18px;
-
+    font-size: 18px
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 main {
     grid-area: main;
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.book {
-    background-color: white;
-    padding: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    text-align: center;
+    gap: 20px
 }
 
 .book img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    align-items: center;
+    align-items: center
 }
 
 footer {
     grid-area: footer;
-    background-color: #333;
-    color: white;
-    text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 20px
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
+@media (min-width:768px) {
     .container {
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "main main"
-            "footer footer";
+        grid-template-areas: "header header" "nav nav" "main main" "footer footer"
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width:1024px) {
     .container {
-        grid-template-areas:
-            "header header header"
-            "nav main main"
-            "footer footer footer";
-        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "header header header" "nav main main" "footer footer footer";
+        grid-template-columns: 1fr 3fr
     }
 }
 
 body {
     background-color: #222;
-    color: white;
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 .container {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer";
+    grid-template-areas: "header" "nav" "main" "footer";
     grid-template-columns: 1fr;
     max-width: 1200px;
     margin: auto;
-    padding: 10px;
+    padding: 10px
 }
 
 header {
-    grid-area: header;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    grid-area: header
 }
 
 #searchBar {
     width: 100%;
     height: 25px;
-
     padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    display: flex;
+    display: flex
 }
 
 .book-grid {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     padding: 10px;
     list-style: none;
-    justify-content: center;
+    justify-content: center
 }
 
 .book {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     background: #444;
     padding: 12px;
     border-radius: 8px;
     cursor: pointer;
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform .2s, box-shadow .2s
 }
 
 .book:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, .2)
 }
 
 button {
-    background: white;
+    background: #fff;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s, color 0.3s;
+    transition: background .3s, color .3s
 }
 
 button:hover {
-    background: #ffcc00;
-    color: #222;
+    background: #fc0;
+    color: #222
 }
 
 .modal {
@@ -183,7 +167,14 @@ button:hover {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.modal img,
+.modal-content,
+.nav-bar {
+    display: flex;
+    display: flex
 }
 
 .modal-content {
@@ -191,13 +182,9 @@ button:hover {
     padding: 20px;
     width: 300px;
     border-radius: 10px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-
+    justify-content: center
 }
 
 .modal img {
@@ -205,72 +192,57 @@ button:hover {
     max-height: 400px;
     object-fit: contain;
     border-radius: 5px;
-    display: flex;
     margin: 0 auto;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .modal a {
     display: block;
     margin: 10px auto;
-    background: #007BFF;
-    color: white;
+    background: #007bff;
+    color: #fff;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
-    width: 80%;
-    text-align: center;
+    width: 80%
 }
 
 .modal a:hover {
-    background: pink;
+    background: pink
 }
 
 .modal-header {
-    position: relative;
+    position: relative
 }
 
 .close {
     position: absolute;
     top: 10px;
     right: 10px;
-    cursor: pointer;
     font-size: 24px;
-    color: black;
-    font-weight: bold;
-    background: none;
+    color: #000;
+    background: 0 0;
     border: none;
+    z-index: 1000
 }
 
-.close {
-    z-index: 1000;
-}
-
-/* Navigation Bar Styling */
 .nav-bar {
-
     width: 87%;
     height: 25px;
-
-    padding: 12px;
+    padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    background-color: white;
-    color: black;
-    padding: 10px;
+    background-color: #fff;
+    color: #000
 }
 
 .nav-item {
-    flex: 1;
-    text-align: center;
+    flex: 1
 }
 
 .nav-item:hover {
-    background-color: pink;
+    background-color: pink
 }

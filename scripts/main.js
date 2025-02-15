@@ -19,20 +19,20 @@ document.addEventListener("DOMContentLoaded", async () => {
             const li = document.createElement("li");
             li.classList.add("book");
             li.innerHTML = `
-                <img src="${book.cover || 'default-cover.jpg'}" alt="${book.title}">
-                <h3>${book.title}</h3>
-                <p>by ${book.author}</p>
+                <img src="${book.c || 'default-c.jpg'}" alt="${book.t}">
+                <h3>${book.t}</h3>
+                <p>by ${book.a}</p>
             `;
 
             li.addEventListener("click", () => {
                 modal.style.display = "block";
-                modalTitle.textContent = book.title;
-                modalAuthor.textContent = `By ${book.author}`;
-                modalImage.src = book.cover || "default-cover.jpg";
-                modalImage.alt = `Cover of ${book.title}`;
+                modalTitle.textContent = book.t;
+                modalAuthor.textContent = `By ${book.a}`;
+                modalImage.src = book.c || "default-c.jpg";
+                modalImage.alt = `Cover of ${book.t}`;
 
-                if (book.pdf) {
-                    modalLink.href = book.pdf;
+                if (book.p) {
+                    modalLink.href = book.p;
                     modalLink.textContent = "Read the Book";
                     modalLink.target = "_blank";
                 } else {
@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         const searchTerm = searchBar.value.toLowerCase();
         saveSearchTerm(searchTerm);
         const filtered = books.filter(book =>
-            book.title.toLowerCase().includes(searchTerm) ||
-            book.author.toLowerCase().includes(searchTerm)
+            book.t.toLowerCase().includes(searchTerm) ||
+            book.a.toLowerCase().includes(searchTerm)
         );
         displayBooks(filtered);
     }
